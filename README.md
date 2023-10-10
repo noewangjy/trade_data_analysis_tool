@@ -2,7 +2,7 @@
 
 In this exercise, we build a trade data analysis tool, together with a testing data generator and grader for checking the results. The requirements and commands are introduced below:
 
-### Input 
+### 1. Input 
 
 The input file represents a very simplified stream of trades on an exchange.  
 
@@ -12,7 +12,7 @@ Each row represents a trade. The data can be thought of as a time series of valu
 
 Although the provided input file is small, the solution should be able to handle a source dataset well beyond the amount of memory and hard disk space on your machine.  
 
-### Definitions
+### 2. Definitions
 
 \- TimeStamp is value indicating the microseconds since midnight. 
 
@@ -42,7 +42,7 @@ Example: here is a row for a trade of 10 shares of aaa stock at a price of 12
 
 
 
-### Problem 
+### 3. Problem 
 
 Find the following on a per symbol basis: 
 
@@ -65,7 +65,7 @@ Your design should allow extension to additional numerical variables computed fo
 
 
 
-### Output
+### 4. Output
 
 Your solution should produce a file called 'output.csv'. This file should be a comma separate file with this format: 
 
@@ -96,7 +96,7 @@ The output should be sorted by symbol ascending ('aaa' should be first).
 
 
 
-### Commands
+### 5. Commands
 
 To generate the testing data:
 
