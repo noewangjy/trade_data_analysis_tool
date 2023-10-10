@@ -16,10 +16,10 @@ struct TradeData {
     TradeData() : lastTimeStamp(0), maxTimeGap(0), volume(0), weightedSum(0), maxPrice(0) {}
 };
 
-int main() {
+int main(int argc, char *argv[]) {
     std::map<std::string, TradeData> symbolData;
-    std::ifstream input("input.csv");
-    std::ofstream output("output.csv");
+    std::ifstream input(argv[1]);
+    std::ofstream output(argv[2]);
 
     if (!input.is_open() || !output.is_open()) {
         std::cerr << "Error opening files!" << std::endl;

@@ -1,2 +1,2 @@
 g++ -o Exercise Exercise.cpp
-./Exercise input.csv output.csv
+./Exercise data/gen_input.csv data/gen_output.csv
